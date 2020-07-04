@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include <conio.h>
+int main()
+{
+clrscr();
+int num1=100;
+num2=50;
+cout<<"num1+num2:"<<(num1+num2)<<endl;
+cout<<"num1-num2:"<<(num1-num2)<<endl;
+cout<<"num1*num2:"<<(num1*num2)<<endl;
+cout<<"num1/num2:"<<(num1/num2)<<endl;
+return 0;
+};
+
