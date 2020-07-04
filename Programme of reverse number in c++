@@ -1,0 +1,13 @@
+#include <iostream>
+#include<conio.h>
+int main() 
+{
+int num = 2703,rev = 0;
+while(num > 0) 
+{
+rev = rev*10 + num%10;
+num = num/10;
+}
+cout<<"reverse of number is:"<<rev;
+return 0;
+};
