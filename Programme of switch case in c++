@@ -1,0 +1,17 @@
+#include<iostream>
+#include<conio.h>
+int main()
+{
+clrscr();
+int num=4;
+switch(num+1)
+{
+case 1: 
+cout<<"Case1: Value is:"<<num<<endl;
+case 2: 
+cout<<"Case2: Value is:"<<num<<endl;
+default: 
+cout<<"Default Value is:"<<num<<endl;
+}
+return 0;
+};
