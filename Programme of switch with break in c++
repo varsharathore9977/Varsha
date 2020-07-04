@@ -1,0 +1,19 @@
+include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+int num=1;
+switch(num)
+{
+case 1:
+cout<<"Case1 "<<endl;
+break;
+case 2:
+cout<<"Case2 "<<endl;
+break;
+default:
+cout<<"Default "<<endl;
+}
+return 0;
+};
