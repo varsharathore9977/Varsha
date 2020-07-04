@@ -1,0 +1,16 @@
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int num=50;
+if(num>120)
+{
+cout<<number is greater than 120"<<endl;
+}
+if(num<120)
+{
+cout<<"number is less than 120"<<endl;
+} 
+return 0;
+};
