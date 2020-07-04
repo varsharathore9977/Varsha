@@ -1,0 +1,16 @@
+#include<iostream.h>
+#include<conio.h>
+int main() 
+{
+clrscr() ;
+int num=20;
+if(num=10)
+cout<<"num is 10"<<endl;
+else if(num=30)
+cout<<"num is 30"<<endl;
+else if(num=15)
+cout<<"num is 15"<<endl;
+else
+cout<<"num is not present" <<endl;
+return 0;
+} ;
