@@ -1,0 +1,13 @@
+include <iostream>
+#include <conio.h>
+int main()
+{
+clrscr();
+int num=2;
+do
+{
+cout<<"value of num:"<<num<<endl;num++;
+}
+while(num<=5);
+return 0;
+};
