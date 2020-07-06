@@ -1,0 +1,12 @@
+#include <iostream>
+#include<conio.h>
+int main()
+{
+clrscr();
+int i=2;
+while(i<=7)
+{
+cout<<"value of variable i is:"<<i<<endl; i++;
+}
+return 0;
+};
