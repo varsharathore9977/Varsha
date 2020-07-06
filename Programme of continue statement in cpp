@@ -1,0 +1,15 @@
+#include <iostream>
+#include<conio.h>
+int main()
+{
+clrscr();
+for (int num=0; num<=6; num++)
+{
+if (num==2) 
+{
+continue;
+}
+cout<<num<<" ";
+}
+return 0;
+};
