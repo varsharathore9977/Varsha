@@ -1,0 +1,19 @@
+#include<iostream.h>
+#include<conio.h>
+int main() 
+{
+clrscr();
+int num=11;
+do
+{
+cout<<"value of num:"<<num<<endl;
+num=num+1;
+if(num>14)
+{
+break;
+} 
+} 
+while(num<15);
+getch();
+return 0;
+};
