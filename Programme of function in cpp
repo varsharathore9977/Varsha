@@ -1,0 +1,9 @@
+#include <iostream.h>
+#include <cmath.h>
+#include<conio.h>
+int main()
+{
+cout<<pow(5,3);
+getch();
+return 0;
+};
