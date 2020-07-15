@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+int main() 
+{
+clrscr() ;
+int arr[] ={1,2,3,4,5} ;
+int x=0;
+while(x<=3)
+{
+cout<<arr[x]<<endl;
+x++;
+} 
+getch();
+return 0;
+};
