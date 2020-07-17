@@ -1,0 +1,11 @@
+#include<"stdio.h>
+#include<conio.h>
+int main() 
+{
+char character;
+printf("Enter any character:"\n);
+scanf("%c",&character);
+printf("hi, what can i do");
+getch();
+return 0;
+};
