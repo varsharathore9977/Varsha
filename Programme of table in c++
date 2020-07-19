@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+void table(int n) 
+{
+while(i<=10)
+{
+t=n*i;
+cout<<n<<"*"<<i<<"="<<t<<endl;
+i++;
+void main() 
+{
+clrscr() ;
+table(4);
+getch() ;
+};
