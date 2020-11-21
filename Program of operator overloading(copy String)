@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class String
+{
+private:
+char x[30];
+public:
+void get() 
+{cout<<"Enter String:" ;
+cin>>x;
+} 
+void put() 
+{cout<<x<<endl;
+void operator >>(String &);
+};
+void String::operator >>(String &t)
+{
+int i;
+for(i=0;x[i];i++)
+{t.x[i]=x[i];}
+t.x[i]=0;}
+int main() 
+{
+String S1,S2;
+S1.get();
+S1>>S2;
+S2.put();
+}
