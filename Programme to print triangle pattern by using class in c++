@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class pattern
+{
+ public:
+ int printpattern()
+ {
+ int a,b,c,rows;
+ cout<<"Enter no of rows: ";
+ cin>>rows;
+ for(a=1; a<=rows; a++)
+ {
+ for(c=a; c<rows; c++)
+ {
+ cout<<" ";
+ }
+ for(b=1; b<=2*a-1; b++)
+ {
+ cout<<"*";
+ }
+ cout<<endl;
+ }
+}
+};
+int main()
+{
+ pattern obj;
+ obj. printpattern();
+}
