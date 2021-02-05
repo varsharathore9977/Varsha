@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class Matrix{
+  public:
+    void add(int a, int b){
+      int m1[a][b], m2[a][b], z[a][b];
+      cout<<"Enter the elements of first matrix: ";
+      for (int i= 0;i<a;i++ ) {
+        for (int j=0;j<b;j++ ) {
+        cin>>m1[i][j];
+        }
+      }
+      cout<<"Enter the elements of second matrix: ";
+      for (int i = 0;i<a;i++ ) {
+        for (int j = 0;j<b;j++ ) {
+         cin>>m2[i][j];
+        }
+      }
+      cout<<"Result:";
+      for(int i = 0;i<a;i++ ) {
+        for(int j=0;j<b;j++ ) {
+          z[i][j]=m1[i][j]+m2[i][j];
+          cout<<z[i][j]<<" ";
+        }
+      }
+    }
+};
+int main()
+{
+	int row,col;
+	cout<<"Enter the number of rows(>1 & <10): ";
+   cin>>row;
+   cout<<"Enter the number of column(>1 & <10): ";
+   cin>>col;
+   Matrix obj;
+   obj.add(row,col);
+  
+}
