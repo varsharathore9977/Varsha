@@ -1,0 +1,15 @@
+#include <iostream>  
+using namespace std;  
+class Manager 
+ {  
+   public:  
+        Manager()    
+        {    
+            cout<<"Default Constructor Created "<<endl;    
+        }    
+};  
+int main()   
+{  
+    Manager m1;   
+    Manager m2;    
+}  
