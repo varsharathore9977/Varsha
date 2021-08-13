@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class String
+{
+	private:
+		char x[30];
+	public:
+	
+	void getString(){
+	cout<<"Enter String:"<<endl;
+	cin>>x;
+	}
+	void putString(){
+	
+	cout<<x<<endl;
+}
+int operator>(String);
+};
+int String::operator>(String t)
+{
+	int i;
+for(i=0;x[i];i++)
+{
+if(x[i]>t.x[i])
+{return(1);  
+}
+}
+return(0);
+}
+int main(){
+	String a;
+	String b;
+	a.getString();
+	b.getString();
+	if(a>b) 
+	{a.putString();
+	cout<<"is >"<<endl;
+	b.putString();
+	}
+else{
+	a.putString();
+	cout<<"is not >"<<endl;
+	b.putString();
+}
+}
