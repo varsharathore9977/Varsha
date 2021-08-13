@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    int arr[100];
+    int size, x, y, c;
+ 
+    cout<<"Enter no of array: ";
+    cin>>size;
+
+    cout<<"Enter elements in array you want to arrange: ";
+    for(x=0; x<size; x++)
+    {
+        cin>>arr[x];
+    }
+   
+    for(x=0; x<size; x++) // array in ascending order
+    {
+for(y=x+1; y<size; y++)
+{
+  if(arr[y] < arr[x])
+ {
+  c= arr[x];
+  arr[x] = arr[y];
+  arr[y] = c;
+ }
+ }
+    }
+    //Printing array in ascending order
+    cout<<"Elements of array in sorted ascending order:"<<endl;
+    for(x=0; x<size; x++)
+    {
+        cout<<arr[x]<<endl;
+    }
+ 
+    return 0;
+}
+ 
+
