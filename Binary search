@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int x,arr[10],no,left,right,mid;
+	cout<<"Enter Elements :"<<endl;
+	for(x=0;x<12;x++)
+	cin>>arr[x];
+	cout<<"Enter Elements You Want To Search :"<<endl;
+	cin>>no;
+	left=0;
+	right=11;
+	mid=(left+right)/2;
+	while(left<=right)
+	{
+		if(arr[mid]<no)
+		left=mid+1;
+		else if(arr[mid]==no)
+		{
+			cout<<"Your Number,"<<no<<" is found in this position.."<<mid+1<<endl;
+			break;
+			}
+			else
+			right=mid-1;
+			mid=(left+right)/2;
+			}
+			if(left>right)
+			cout<<"The number ,"<<no<<"not found.."<<endl;
+			return 0;
+}
