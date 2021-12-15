@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+void swap(int *x,int *y)
+{
+	int temp;
+	temp=*x;
+	*x=*y;
+	*y=temp;
+}
+int Quick(int a[],int l,int j)
+{
+	int pivot,index,i;
+	index=l;
+	pivot=j;
+	for(i=l;i<j;i++)
+	{
+		if(a[i]<a[pivot])
+		{
+			swap(&a[i],&a[index]);
+		index++;
+		}
+	}
+swap(&a[pivot],&a[index]);
+return index;
+}
+int SortingElement(int a[],int l,int j)
+{
+int pvt,n,temp;
+n=rand();
+pvt=l+n%(j-l+1);
+swap(&a[j],&a[pvt]);
+return Quick(a,l,j);
+}
+int QS(int a[],int l,int j)
+{
+	int pi;
+	if(l<j)
+	{
+		pi=SortingElement(a,l,j);
+		QS(a,l,pi-1);
+		QS(a,pi+1,j);
+	}
+	return 0;
+}
+int main()
+{
+	int n,i;
+	cout<<"Enter the number of elememt U wants to sorted...";
+	cin>>n;
+	int arr[n];
+	for(i=0;i<n;i++)
+	{
+		cout<<"Enter elements: "<<i+1<<" : ";
+		cin>>arr[i];
+}
+QS(arr,0,n-1);
+cout<<" Sorted elements are:"<<endl;
+for(i=0;i<n;i++)
+cout<<","<<arr[i];
+}
