@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int i,j,n,min,sel,rev,a[50],sort;
+	cout<<"Enter No. Of Elements U Want to Sort :"<<endl;
+	cin>>n;
+	cout<<"Enter Elements :"<<endl;
+	for(i=0;i<n;i++){
+	cin>>a[i];
+			}
+			for(i=0;i<n-1;i++){
+			sort=0;
+			min=a[i];
+			sel=i;
+			for(j=(i+1);j<n;j++){
+				if(min>a[j]){
+					min=a[j];
+					sort++;
+					sel=j;
+				}
+			}
+			if(sort!=0){
+			
+			rev=a[i];
+			a[i]=a[sel];
+			a[sel]=rev;	
+		}
+}
+cout<<"Selection Sort is :"<<endl;
+for(i=0;i<n;i++){
+	cout<<a[i]<<"  ";
+}
+return 0;
+}
